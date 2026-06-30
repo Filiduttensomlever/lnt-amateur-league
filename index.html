@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>LNT Amateur League</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="brand">
+    <img src="assets/logos/logo.png" alt="LNT Amateur League logo">
+    <span>LNT Amateur League</span>
+  </a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="teams.html">Teams</a>
+    <a href="players.html">Players</a>
+    <a href="matches.html">Matches</a>
+    <a href="rankings.html">Rankings</a>
+  </nav>
+</header>
+
+<main class="home-page">
+
+  <!-- Hero section -->
+  <section class="home-hero">
+    <div class="home-hero-content">
+      <span class="home-season-label">Season 3</span>
+
+      <h1>
+        Welcome to the
+        <span>LNT Amateur League</span>
+      </h1>
+
+      <p>
+        Follow teams, browse player rosters, view upcoming matches,
+        and keep track of the Season 3 standings.
+      </p>
+
+      <div class="home-hero-buttons">
+        <a href="teams.html" class="primary-button">
+          View Teams
+        </a>
+
+        <a href="matches.html" class="secondary-button">
+          View Matches
+        </a>
+      </div>
+    </div>
+
+    <div class="home-hero-logo">
+      <div class="home-logo-glow"></div>
+
+      <img
+        src="assets/logos/logo.png"
+        alt="LNT Amateur League logo"
+      >
+    </div>
+  </section>
+
+  <!-- League statistics -->
+  <section class="home-statistics">
+    <article class="home-stat-card">
+      <span id="home-team-count">0</span>
+      <p>Teams</p>
+    </article>
+
+    <article class="home-stat-card">
+      <span id="home-player-count">0</span>
+      <p>Roster Slots</p>
+    </article>
+
+    <article class="home-stat-card">
+      <span>Season 3</span>
+      <p>Current Season</p>
+    </article>
+
+    <article class="home-stat-card">
+      <span id="home-match-count">0</span>
+      <p>Completed Matches</p>
+    </article>
+  </section>
+
+  <!-- Season information -->
+  <section class="home-section">
+    <div class="home-section-heading">
+      <div>
+        <span class="section-label">League update</span>
+        <h2>Season 3</h2>
+      </div>
+
+      <a href="matches.html" class="section-link">
+        Full schedule →
+      </a>
+    </div>
+
+    <div id="home-season-notice"></div>
+  </section>
+
+  <!-- Teams -->
+  <section class="home-section">
+    <div class="home-section-heading">
+      <div>
+        <span class="section-label">Competitors</span>
+        <h2>League Teams</h2>
+      </div>
+
+      <a href="teams.html" class="section-link">
+        View all teams →
+      </a>
+    </div>
+
+    <div id="home-teams-grid" class="home-teams-grid"></div>
+  </section>
+
+  <!-- Upcoming matches -->
+  <section class="home-section">
+    <div class="home-section-heading">
+      <div>
+        <span class="section-label">Coming next</span>
+        <h2>Upcoming Matches</h2>
+      </div>
+
+      <a href="matches.html" class="section-link">
+        All matches →
+      </a>
+    </div>
+
+    <div id="home-upcoming-matches" class="home-match-list"></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div>
+    <img src="assets/logos/logo.png" alt="LNT logo">
+    <span>LNT Amateur League</span>
+  </div>
+
+  <p>
+    Independent amateur esports league.
+  </p>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

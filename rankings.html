@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rankings | LNT Amateur League</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="brand">
+    <img src="assets/logos/logo.png" alt="LNT Amateur League logo">
+    <span>LNT Amateur League</span>
+  </a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="teams.html">Teams</a>
+    <a href="players.html">Players</a>
+    <a href="matches.html">Matches</a>
+    <a href="rankings.html">Rankings</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <div class="rankings-heading">
+    <span class="section-label">Season 3</span>
+
+    <h1>League Rankings</h1>
+
+    <p class="subtitle">
+      Standings automatically update when completed match results are added.
+    </p>
+  </div>
+
+  <section id="rankings-notice"></section>
+
+  <section class="rankings-table-wrapper">
+    <table class="rankings-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Team</th>
+          <th>Played</th>
+          <th>Wins</th>
+          <th>Losses</th>
+          <th>Map Difference</th>
+        </tr>
+      </thead>
+
+      <tbody id="rankings-table-body"></tbody>
+    </table>
+  </section>
+
+</main>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

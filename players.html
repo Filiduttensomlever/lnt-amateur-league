@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Players | LNT Amateur League</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="brand">
+    <img src="assets/logos/logo.png" alt="LNT logo">
+    <span>LNT Amateur League</span>
+  </a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="teams.html">Teams</a>
+    <a href="players.html">Players</a>
+    <a href="matches.html">Matches</a>
+    <a href="rankings.html">Rankings</a>
+  </nav>
+</header>
+
+<main class="page">
+  <div class="players-heading">
+    <div>
+      <span class="section-label">League database</span>
+      <h1>Players</h1>
+      <p class="subtitle">Browse players competing in the LNT Amateur League.</p>
+    </div>
+
+    <span id="players-count" class="player-count"></span>
+  </div>
+
+  <section class="players-controls">
+    <input
+      type="search"
+      id="player-search"
+      placeholder="Search player, team, or region..."
+      autocomplete="off"
+    >
+
+    <select id="team-filter">
+      <option value="all">All teams</option>
+    </select>
+  </section>
+
+  <section class="players-table-wrapper">
+    <table class="players-table">
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Team</th>
+          <th>Region</th>
+        </tr>
+      </thead>
+
+      <tbody id="players-table-body"></tbody>
+    </table>
+
+    <div id="players-empty" class="players-empty" hidden>
+      No players matched your search.
+    </div>
+  </section>
+</main>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

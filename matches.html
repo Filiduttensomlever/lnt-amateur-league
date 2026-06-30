@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Matches | LNT Amateur League</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="brand">
+    <img src="assets/logos/logo.png" alt="LNT Amateur League logo">
+    <span>LNT Amateur League</span>
+  </a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="teams.html">Teams</a>
+    <a href="players.html">Players</a>
+    <a href="matches.html">Matches</a>
+    <a href="rankings.html">Rankings</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <div class="matches-heading">
+    <span class="section-label">League schedule</span>
+
+    <h1>Matches</h1>
+
+    <p class="subtitle">
+      Upcoming matches and recent results from the LNT Amateur League.
+    </p>
+  </div>
+
+  <!-- Season 3 tentative schedule -->
+  <section id="schedule-notice"></section>
+
+  <!-- Upcoming matches -->
+  <section class="matches-section">
+    <div class="section-heading">
+      <div>
+        <span class="section-label">Scheduled</span>
+        <h2>Upcoming Matches</h2>
+      </div>
+
+      <span id="upcoming-count" class="player-count"></span>
+    </div>
+
+    <div id="upcoming-matches" class="matches-list"></div>
+  </section>
+
+  <!-- Recent results -->
+  <section class="matches-section">
+    <div class="section-heading">
+      <div>
+        <span class="section-label">Completed</span>
+        <h2>Recent Results</h2>
+      </div>
+
+      <span id="results-count" class="player-count"></span>
+    </div>
+
+    <div id="recent-results" class="matches-list"></div>
+  </section>
+
+</main>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
