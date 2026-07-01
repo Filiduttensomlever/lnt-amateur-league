@@ -1,3 +1,17 @@
+function getFlagEmoji(countryCode) {
+  if (!countryCode || countryCode.length !== 2) {
+    return "🌐";
+  }
+
+  return countryCode
+    .toUpperCase()
+    .split("")
+    .map(character =>
+      String.fromCodePoint(127397 + character.charCodeAt())
+    )
+    .join("");
+}
+
 const teamsGrid = document.getElementById("teams-grid");
 
 if (teamsGrid) {
@@ -53,10 +67,18 @@ if (teamProfile) {
 
       <div class="roster-list">
         ${roster.map(player => `
-          <div class="player-row">
-            <img src="${player.avatar}" alt="${player.nickname}">
-            <span>${player.nickname}</span>
-          </div>
+         <div class="player-row">
+  <img src="${player.avatar}" alt="${player.nickname}">
+
+  <div class="player-row-info">
+    <strong>${player.nickname}</strong>
+
+    <span>
+      ${getFlagEmoji(player.countryCode)}
+      ${player.country || "Not listed"}
+    </span>
+  </div>
+</div>
         `).join("")}
       </div>
     `;
@@ -79,7 +101,8 @@ if (playersTableBody) {
       teamId: team.id,
       teamName: team.name,
       teamLogo: team.logo,
-      region: team.region
+      country: player.country || "Not listed",
+      countryCode: player.countryCode || ""
     }));
   });
 
@@ -100,7 +123,7 @@ if (playersTableBody) {
       const matchesSearch =
         player.nickname.toLowerCase().includes(searchTerm) ||
         player.teamName.toLowerCase().includes(searchTerm) ||
-        player.region.toLowerCase().includes(searchTerm);
+        player.country.toLowerCase().includes(searchTerm);
 
       const matchesTeam =
         selectedTeam === "all" || player.teamId === selectedTeam;
@@ -109,31 +132,45 @@ if (playersTableBody) {
     });
 
     playersTableBody.innerHTML = filteredPlayers.map(player => `
-      <tr class="player-table-row">
-        <td>
-          <div class="player-table-profile">
-            <img
-              src="${player.avatar}"
-              alt="Default avatar for ${player.nickname}"
-            >
+  <tr class="player-table-row">
+    <td>
+      <div class="player-table-profile">
+        <img
+          src="${player.avatar}"
+          alt="Default avatar for ${player.nickname}"
+        >
 
-            <strong>${player.nickname}</strong>
-          </div>
-        </td>
+        <strong>${player.nickname}</strong>
+      </div>
+    </td>
 
-        <td>
-          <a
-            href="team.html?id=${player.teamId}"
-            class="player-team-link"
-          >
-            <img src="${player.teamLogo}" alt="">
-            <span>${player.teamName}</span>
-          </a>
-        </td>
+    <td>
+      <a
+        href="team.html?id=${player.teamId}"
+        class="player-team-link"
+      >
+        <img src="${player.teamLogo}" alt="">
+        <span>${player.teamName}</span>
+      </a>
+    </td>
 
-        <td class="player-region">${player.region}</td>
-      </tr>
-    `).join("");
+    <td class="player-country">
+      <span class="country-display">
+        <span class="country-flag">
+          ${getFlagEmoji(player.countryCode)}
+        </span>
+
+        <span>${player.country}</span>
+      </span>
+    </td>
+
+    <td class="player-titles">
+      <span class="title-count">
+        🏆 ${player.leagueTitles || 0}
+      </span>
+    </td>
+  </tr>
+`).join("");
 
     playersCount.textContent =
       `${filteredPlayers.length} ${filteredPlayers.length === 1 ? "player" : "players"}`;
@@ -552,7 +589,7 @@ if (homeTeamsGrid) {
   const homeTeamCards =
     document.querySelectorAll(".home-team-card");
 
-  homeTeamCards.forEach(card => {
+    homeTeamCards.forEach(card => {
     card.addEventListener("click", event => {
       event.preventDefault();
 
@@ -565,3 +602,28 @@ if (homeTeamsGrid) {
     });
   });
 }
+
+/* =========================
+   RESET PAGE ANIMATIONS
+========================= */
+
+function resetPageAnimations() {
+  document.body.classList.remove(
+    "page-leaving",
+    "home-page-leaving"
+  );
+
+  document
+    .querySelectorAll(
+      ".team-card-clicked, .home-team-card-clicked"
+    )
+    .forEach(card => {
+      card.classList.remove(
+        "team-card-clicked",
+        "home-team-card-clicked"
+      );
+    });
+}
+
+window.addEventListener("pageshow", resetPageAnimations);
+resetPageAnimations();

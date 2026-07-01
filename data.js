@@ -41,133 +41,223 @@ const rosters = {
     "swedish-mafia": [
         {
             nickname: "Henke",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Sweden",
+            countryCode: "SE",
+            leagueTitles: 1
         },
         {
             nickname: "Aggen",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Sweden",
+            countryCode: "SE",
+            leagueTitles: 1
         },
         {
             nickname: "Dandej",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Sweden",
+            countryCode: "SE",
+            leagueTitles: 1
         },
         {
             nickname: "Ajr0x",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Sweden",
+            countryCode: "SE",
+            leagueTitles: 2
         },
         {
             nickname: "KiKi",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Sweden",
+            countryCode: "SE",
+            leagueTitles: 1
         }
     ],
     "vexors": [
         {
             nickname: "arowyce",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Romania",
+            countryCode: "RO",
+            leagueTitles: 1
         },
         {
             nickname: "cripsy",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Romania",
+            countryCode: "RO",
+            leagueTitles: 1
         },
         {
             nickname: "Kranq",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Romania",
+            countryCode: "RO",
+            leagueTitles: 1
         },
         {
             nickname: "Enzon2",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Estonia",
+            countryCode: "EE",
+            leagueTitles: 0
         },
         {
             nickname: "g0tl1b",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Ukraine",
+            countryCode: "UA",
+            leagueTitles: 1
         }
     ],
     "btm": [
         {
             nickname: "Aar0",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Finland",
+            countryCode: "FI",
+            leagueTitles: 0
         },
         {
             nickname: "Gl1tch",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Finland",
+            countryCode: "FI",
+            leagueTitles: 0
         },
         {
             nickname: "P0ntso",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Finland",
+            countryCode: "FI",
+            leagueTitles: 0
         },
         {
             nickname: "zoxs",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Finland",
+            countryCode: "FI",
+            leagueTitles: 0
         },
         {
             nickname: "Patukka",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Finland",
+            countryCode: "FI",
+            leagueTitles: 0
         }
     ],
     "finals": [
         {
             nickname: "Volcan?",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "France",
+            countryCode: "FR",
+            leagueTitles: 0
         },
         {
             nickname: "Gaweu",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "France",
+            countryCode: "FR",
+            leagueTitles: 0
         },
         {
             nickname: "Heliozz",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "France",
+            countryCode: "FR",
+            leagueTitles: 0
         },
         {
             nickname: "Mamlook",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "France",
+            countryCode: "FR",
+            leagueTitles: 0
         },
         {
             nickname: "Nanachi",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "France",
+            countryCode: "FR",
+            leagueTitles: 0
         }
     ],
     "plato-esports": [
         {
             nickname: "TBD",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Not listed",
+            countryCode: "",
+            leagueTitles: 0
         },
         {
             nickname: "TBD",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Not listed",
+            countryCode: "",
+            leagueTitles: 0
         },
         {
             nickname: "TBD",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Not listed",
+            countryCode: "",
+            leagueTitles: 0
         },
         {
             nickname: "TBD",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Not listed",
+            countryCode: "",
+            leagueTitles: 0
         },
         {
             nickname: "TBD",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Not listed",
+            countryCode: "",
+            leagueTitles: 0
         }
     ],
     "revo": [
         {
             nickname: "Mike",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Czech Republic",
+            countryCode: "CZ",
+            leagueTitles: 0
         },
         {
             nickname: "Rev",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Kosovo",
+            countryCode: "XK",
+            leagueTitles: 0
         },
         {
             nickname: "Pavlos",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Czech Republic",
+            countryCode: "CZ",
+            leagueTitles: 0
         },
         {
             nickname: "rocket1405",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Czech Republic",
+            countryCode: "CZ",
+            leagueTitles: 0
         },
         {
             nickname: "Jacob",
-            avatar: "assets/avatars/player.webp"
+            avatar: "assets/avatars/player.webp",
+            country: "Czech Republic",
+            countryCode: "CZ",
+            leagueTitles: 0
         }
     ],
 };

@@ -289,10 +289,6 @@ nav a:hover {
   object-fit: contain;
 }
 
-.player-region {
-  color: #9ca3af;
-}
-
 .players-empty {
   padding: 50px 20px;
   color: #8991a3;
@@ -1310,4 +1306,34 @@ nav a:hover {
     gap: 12px;
     padding: 25px 20px;
   }
+}
+
+.player-country {
+  color: #9ca3af;
+}
+
+.country-display {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.country-flag {
+  font-size: 20px;
+}
+
+.player-row-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.player-row-info strong {
+  color: white;
+  font-size: 16px;
+}
+
+.player-row-info span {
+  color: #8991a3;
+  font-size: 13px;
 }
