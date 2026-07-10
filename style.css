@@ -1337,3 +1337,146 @@ nav a:hover {
   color: #8991a3;
   font-size: 13px;
 }
+
+/* =========================
+   ADMIN LOGIN
+========================= */
+
+.auth-page {
+  display: grid;
+  min-height: 100vh;
+  padding: 24px;
+  box-sizing: border-box;
+  place-items: center;
+}
+
+.auth-card {
+  width: min(100%, 420px);
+  padding: 36px;
+  box-sizing: border-box;
+  background: #171c27;
+  border: 1px solid #2c3444;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+.auth-logo {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.auth-card h1 {
+  margin: 8px 0;
+}
+
+.auth-card > p {
+  color: #9ca3af;
+  line-height: 1.5;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.auth-form label {
+  margin-top: 8px;
+  color: #cfd3df;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.auth-form input {
+  padding: 13px 14px;
+  color: white;
+  background: #10141d;
+  border: 1px solid #343d50;
+  border-radius: 9px;
+  font: inherit;
+  outline: none;
+}
+
+.auth-form input:focus {
+  border-color: #7c8cff;
+  box-shadow: 0 0 0 3px rgba(124, 140, 255, 0.12);
+}
+
+.auth-form button,
+.logout-button {
+  padding: 13px 18px;
+  color: white;
+  background: #6978f5;
+  border: 1px solid #7c8cff;
+  border-radius: 9px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: bold;
+}
+
+.auth-form button {
+  margin-top: 14px;
+}
+
+.auth-form button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.auth-error {
+  padding: 11px;
+  color: #ffd1d1;
+  background: rgba(220, 70, 70, 0.12);
+  border: 1px solid rgba(220, 70, 70, 0.3);
+  border-radius: 8px;
+}
+
+.auth-back {
+  display: inline-block;
+  margin-top: 22px;
+  color: #9da8ff;
+  text-decoration: none;
+}
+
+.admin-placeholder {
+  margin-top: 25px;
+  padding: 28px;
+  background: #171c27;
+  border: 1px solid #2c3444;
+  border-radius: 16px;
+}
+
+.password-warning {
+  padding: 13px;
+  color: #fff;
+  background: rgba(214, 168, 0, 0.22);
+  border: 1px solid #d6a800;
+  border-radius: 9px;
+}
+
+.change-password-form {
+  max-width: 500px;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #2c3444;
+}
+
+.change-password-form h3 {
+  margin: 0 0 8px;
+}
+
+.change-password-form small {
+  color: #9ca3af;
+  margin-bottom: 4px;
+}
+
+.auth-success {
+  padding: 11px;
+  color: #d8ffe2;
+  background: rgba(72, 190, 110, 0.14);
+  border: 1px solid rgba(72, 190, 110, 0.35);
+  border-radius: 8px;
+}

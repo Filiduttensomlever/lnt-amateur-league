@@ -12,10 +12,10 @@ const teams = [
         region: "France"
     },
     {
-        id: "plato-esports",
-        name: "PLATO Esports",
-        logo: "assets/logos/plato-esports.jpg",
-        region: "Europe"
+        id: "swm-nxt",
+        name: "SWM NXT",
+        logo: "assets/logos/swm-nxt.png",
+        region: "Sweden"
     },
     {
         id: "revo",
@@ -151,7 +151,7 @@ const rosters = {
     ],
     "finals": [
         {
-            nickname: "Volcan?",
+            nickname: "Bryan?",
             avatar: "assets/avatars/player.webp",
             country: "France",
             countryCode: "FR",
@@ -165,40 +165,40 @@ const rosters = {
             leagueTitles: 0
         },
         {
+            nickname: "Volcan?",
+            avatar: "assets/avatars/player.webp",
+            country: "France",
+            countryCode: "FR",
+            leagueTitles: 0
+        },
+        {
+            nickname: "Maml00k",
+            avatar: "assets/avatars/player.webp",
+            country: "France",
+            countryCode: "FR",
+            leagueTitles: 0
+        },
+        {
             nickname: "Heliozz",
-            avatar: "assets/avatars/player.webp",
-            country: "France",
-            countryCode: "FR",
-            leagueTitles: 0
-        },
-        {
-            nickname: "Mamlook",
-            avatar: "assets/avatars/player.webp",
-            country: "France",
-            countryCode: "FR",
-            leagueTitles: 0
-        },
-        {
-            nickname: "Nanachi",
             avatar: "assets/avatars/player.webp",
             country: "France",
             countryCode: "FR",
             leagueTitles: 0
         }
     ],
-    "plato-esports": [
+    "swm-nxt": [
         {
-            nickname: "TBD",
+            nickname: "PYA",
             avatar: "assets/avatars/player.webp",
-            country: "Not listed",
-            countryCode: "",
+            country: "Sweden",
+            countryCode: "SE",
             leagueTitles: 0
         },
         {
-            nickname: "TBD",
+            nickname: "kyozin",
             avatar: "assets/avatars/player.webp",
-            country: "Not listed",
-            countryCode: "",
+            country: "Lithuania",
+            countryCode: "LT",
             leagueTitles: 0
         },
         {
@@ -225,35 +225,35 @@ const rosters = {
     ],
     "revo": [
         {
-            nickname: "Mike",
+            nickname: "Rev",
             avatar: "assets/avatars/player.webp",
             country: "Czech Republic",
             countryCode: "CZ",
             leagueTitles: 0
         },
         {
-            nickname: "Rev",
+            nickname: "Kip",
             avatar: "assets/avatars/player.webp",
             country: "Kosovo",
             countryCode: "XK",
             leagueTitles: 0
         },
         {
-            nickname: "Pavlos",
+            nickname: "Pasha",
             avatar: "assets/avatars/player.webp",
             country: "Czech Republic",
             countryCode: "CZ",
             leagueTitles: 0
         },
         {
-            nickname: "rocket1405",
+            nickname: "Werkaaaa",
             avatar: "assets/avatars/player.webp",
             country: "Czech Republic",
             countryCode: "CZ",
             leagueTitles: 0
         },
         {
-            nickname: "Jacob",
+            nickname: "MrZenbe",
             avatar: "assets/avatars/player.webp",
             country: "Czech Republic",
             countryCode: "CZ",
@@ -265,10 +265,10 @@ const rosters = {
 const seasonSchedule = {
   season: "Season 3",
   status: "Tentative",
-  dateWindow: "6–12 July 2026",
-  time: "TBD",
+  dateWindow: "10-12 July 2026",
+  time: "8pm CEST",
   message:
-    "Matches are expected to be played sometime between Monday and Sunday. Exact matchups, dates, and times will be announced soon."
+    "Vexors VS REVO, This is an estimated time nothing is confirmed."
 };
 
 const matches = [];
